@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @apply bg-white text-gray-800 min-h-screen;
+}
+
+a {
+  @apply text-blue-600 hover:text-blue-800 font-medium transition-colors;
+}
+
+button {
+  @apply bg-blue-600 text-white px-4 py-2 rounded-md shadow-md hover:bg-blue-700 transition-all duration-200;
+}
+
+input, select, textarea {
+  @apply w-full border border-gray-300 rounded-md px-3 py-2 mt-1 mb-4 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400;
+}
+
+.card {
+  @apply bg-white p-6 rounded-lg shadow-md;
+}
+
+.navbar {
+  @apply bg-blue-700 text-white py-4 px-6 shadow;
+}
+
+.navbar a {
+  @apply mx-3 hover:underline;
+}
+
+h1, h2, h3 {
+  @apply font-bold text-gray-900;
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}

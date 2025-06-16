@@ -1,0 +1,26 @@
+# Node
+node_modules/
+.env
+package-lock.json
+npm-debug.log*
+
+# Vite
+dist/
+.vite/
+
+# Editor & System
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Optional cache/build files
+*.bak
+*.tmp
+*.swp
+
+# MongoDB debug/cache (if used)
+dump/
+repomix-output.xml
