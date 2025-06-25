@@ -8,13 +8,15 @@ import rewardRoutes from "./routes/rewardRoutes.js";
 dotenv.config();
 const app = express();
 
-// Middleware
-app.use(express.json());
 app.use(cors({
   origin: 'https://referral-reward-system.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true
 }));
+
+// Middleware
+app.use(express.json());
+
 app.use("/api/rewards", rewardRoutes); // ✅ This is essential
 
 // Import routes
