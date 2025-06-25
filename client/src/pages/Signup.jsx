@@ -13,10 +13,12 @@ export default function Signup() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const API_BASE = import.meta.env.VITE_API_BASE_URL.replace(/\/$/, "");
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/auth/signup`, formData, {
+      const res = await axios.post(`${API_BASE}/api/auth/signup`, formData, {
         headers: { "Content-Type": "application/json" },
       });
 
