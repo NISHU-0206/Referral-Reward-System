@@ -24,3 +24,4 @@ dist/
 # MongoDB debug/cache (if used)
 dump/
 repomix-output.xml
+spyder.code-workspace
