@@ -18,6 +18,7 @@ app.options('*', cors());
 
 // Middleware
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/rewards", rewardRoutes); // ✅ This is essential
 
