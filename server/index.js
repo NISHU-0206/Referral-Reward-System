@@ -10,7 +10,10 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: 'https://referral-reward-system.vercel.app',
+  credentials: true
+}));
 app.use("/api/rewards", rewardRoutes); // ✅ This is essential
 
 // Import routes
