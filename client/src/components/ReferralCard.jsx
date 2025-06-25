@@ -16,7 +16,7 @@ export default function ReferralCards() {
     }
 
     axios
-      .get("http://localhost:5000/api/referrals", {
+      .get(`${import.meta.env.VITE_API_BASE_URL}/api/referrals`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {

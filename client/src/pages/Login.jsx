@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useAuth } from "../context/AuthContext";
 
-const API_URL = "http://localhost:5000/api/auth/login";
+const API_URL = `${import.meta.env.VITE_API_BASE_URL}/api/auth/login`;
 
 export default function Login() {
   const [email, setEmail] = useState("");

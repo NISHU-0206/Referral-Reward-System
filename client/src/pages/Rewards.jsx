@@ -18,7 +18,7 @@ export default function Rewards() {
         }
 
         const response = await axios.get(
-          `http://localhost:5000/api/rewards/${user._id}`,
+          `${import.meta.env.VITE_API_BASE_URL}/api/rewards/${user._id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`, // optional if required
