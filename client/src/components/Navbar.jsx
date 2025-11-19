@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <nav className="navbar flex justify-between items-center px-6 py-4 bg-blue-700 text-white shadow-md">
       <h1 className="text-xl font-bold">
-        <Link to="/" className="hover:text-gray-300 transition">Referral System</Link>
+        <Link to="/" className="hover:text-blue-300 transition">Referral System</Link>
       </h1>
 
       <div className="flex space-x-4 text-sm md:text-base">
