@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar flex justify-between items-center px-6 py-4 bg-blue-700 text-gray-100 shadow-lg">
+    <nav className="navbar flex justify-between items-center px-6 py-4 bg-blue-700 text-gray-100">
       <h1 className="text-xl font-bold">
         <Link to="/" className="hover:text-gray-300 transition">Referral System</Link>
       </h1>
